@@ -11,13 +11,13 @@ const fullNames = name.map((name) => name + ' Brewer');
 
 const contest = 'THE RELAY';
 
-const skaters = {'Eric Koston', 'Shane ONeil', 'Kevin Bradley'];
+const skaters = ['Eric Koston', 'Shane ONeil', 'Kevin Bradley'];
 
                  
 // object arrow function                 
 const champions = skaters.map((skater, i) => ({ name: skater, contest: contest, rank: i + 1 }));
 
-console.table(champion);
+console.table(champions);
                  
 // const champions = skaters.map(function(skater, i) {
 //   return {
