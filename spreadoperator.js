@@ -9,8 +9,36 @@ const skatePants = ['Volcom', 'Matix', 'RVCA'];
 const skateShoes = ['Emerica', 'Nike SB', 'Vans'];
 
 const combinedIsh = [...skatePants, 'Santa Cruz', ...skateShoes];
+// console.log(combinedIsh);
 
-console.log(combinedIsh);
+// 5.
+const skaterDude = {
+  name: 'nah',
+  shoes: ['DC', 'Supra'],
+};
+
+skaterDude.shoes = [...skaterDude.shoes, ...skateShoes];
+
+const comments = [
+  { id: 1, comment: 'You keep shreddin dude, you rock!'},
+  { id: 2, comment: 'You\'re my hero! I live vicariously through you!'},
+  { id: 3, comment: 'A giraffe skates better than you.... and you look like one too...'},
+  { id: 4, comment: 'I love you long time'},
+];
+
+const id = 3;
+const commentIndex = comments.findIndex((comment) => comment.id === id);
+
+const niceComments = [...comments.slice(0, commentIndex), ...comments.slice(commentIndex + 1)];
+
+console.log(niceComments)
+
+// console.log(commentIndex);
+
+// 6.
+// console.log(skaterDude.shoes);
+//console.log(...skaterDude.shoes[2]);
+// console.log([...skaterDude.shoes[2]]);
 
 
 // 3.
