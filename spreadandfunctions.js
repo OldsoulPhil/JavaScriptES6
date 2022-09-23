@@ -6,7 +6,7 @@ const moreDogs = ['Labrador', 'Golden Retriever', 'Great Dane'];
 //dogs.push.apply(dogs, moreDogs);
 
 
-// this is clearn and does the same thing as dogs.push.apply();
+// this is cleaner and does the same thing as dogs.push.apply();
 dogs.push(...moreDogs);
 
 const greeting = (first, last) => console.log(`Hello ${first} ${last}`);
